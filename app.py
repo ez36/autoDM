@@ -17,8 +17,8 @@ def start():
                 id = dms[i]['id']
 
                 if len(message) is not 0 and len(message) < 280:
-                    if "anifesss" in message:
-                        message = message.replace("anifesss", "")
+                    if "kampfess" in message:
+                        message = message.replace("kampfess", "*kampfess")
                         if len(message) is not 0:
                             if dms[i]['media'] is None:
                                 print("DM will be posted")
@@ -45,7 +45,7 @@ def start():
             print("Direct message is empty...")
             dms = tw.read_dm()
             if len(dms) is 0:
-                time.sleep(60)
+                time.sleep(30)
 
 if __name__ == "__main__":
     start()
