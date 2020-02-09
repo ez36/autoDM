@@ -17,7 +17,7 @@ def start():
                 id = dms[i]['id']
 
                 if len(message) is not 0 and len(message) < 280:
-                    if "kamfess" in message:
+                    if "kamfess" in message.lower():
                         message = message.replace("kamfess", "kamfess")
                         if len(message) is not 0:
                             if dms[i]['media'] is None:
